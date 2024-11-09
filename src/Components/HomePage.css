@@ -1,0 +1,50 @@
+.homepage-container {
+    padding: 20px;
+    
+}
+.blog-post-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100vh;
+}
+.post-card {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns image and content */
+    margin-bottom: 20px; /* Space between posts */
+    border: 1px solid #ddd; /* Optional border for visual separation */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* To clip overflowing content */
+    width: 400px;
+}
+.post-card:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.post-image {
+    width: 150px; /* Fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Crop image to fit */
+    border-right: 1px solid #ddd; 
+    height: 100%;/* Separator between image and content */
+    width: 90%;
+    border-radius: 13px;
+    margin: auto;
+}
+
+
+.post-content {
+    padding: 10px; /* Padding around the text */
+}
+
+.post-title {
+    margin: 0; /* Remove default margin */
+    font-size: 40px;
+    text-align: center;
+}
+
+.post-summary {
+    color: #555; /* Gray color for summary text */
+}

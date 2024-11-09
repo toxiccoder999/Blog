@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+html, body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E1E8EE;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+
+.upload-container {
+  background-color: rgba(255, 255, 255, 0.95); /* Light background */
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px); /* Soft glass effect */
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  color: #222;
+  margin-bottom: 24px;
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-group {
+  text-align: left;
+}
+
+.input-group input[type="text"],
+.input-group input[type="file"],
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 16px;
+  background-color: #f8f9fa; /* Very light gray */
+  color: #222;
+  transition: all 0.3s ease;
+}
+
+.input-group input[type="text"]:focus,
+.input-group textarea:focus {
+  border-color: #6B92A4;
+  outline: none;
+  box-shadow: 0 0 6px rgba(106, 17, 203, 0.2);
+}
+
+.input-group input::placeholder {
+  color: #888;
+}
+
+.upload-btn {
+  background-color: #6B92A4;
+  color: #fff;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload-btn:hover {
+  background-color: #4A687C;
+  transform: translateY(-2px);
+}
+
+.upload-btn:active {
+  transform: translateY(1px);
+}
+
+/* Styles for the image preview */
+.image-preview {
+  margin-top: 10px; /* Space above the image preview */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.preview-img {
+  max-width: 100%; /* Ensure the image does not exceed container width */
+  max-height: 300px; /* Set a maximum height */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
